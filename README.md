@@ -90,7 +90,9 @@ This guide provides a step-by-step walkthrough to set up a Python project for bu
      OPENAI_API_KEY=your_api_key_here
      ```
 
-   - Go to the [OpenAI Developer Platform](https://platform.openai.com/) to create your new API key.
+   - Go to the [OpenAI Developer Platform](https://platform.openai.com/) to create your new API key:
+![OpenAI Developer Platform](https://github.com/jason-victor1/basic-setup/blob/main/OpenAI%20Developer%20Platform.png?raw=true)
+
 
    - Install `python-dotenv` to load the `.env` file:
      ```bash
