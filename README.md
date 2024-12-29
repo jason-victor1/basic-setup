@@ -133,7 +133,7 @@ This guide provides a step-by-step walkthrough to set up a Python project for bu
 
 If the setup is correct, the script will generate and print a response based on the input prompt:
 
-```vbnet
+```text
 AI agents are autonomous entities that observe through sensors and act upon an environment using actuators based on artificial intelligence and machine learning to achieve specific goals.
 ```
 
