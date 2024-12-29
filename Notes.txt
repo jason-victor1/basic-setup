@@ -1,0 +1,6 @@
+Basic Setup:
+
+1- Create Python venv ✅
+2- Install openai ✅
+3- Create a basic text generation function + test ✅
+
