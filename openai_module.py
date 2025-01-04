@@ -9,7 +9,7 @@ load_dotenv()
 openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
-def generate_text_basic(prompt: str, model="gpt-4", system_prompt: str = "You are a helpfull ai assistant"):
+def generate_text_basic(prompt: str, model="gpt-4o", system_prompt: str = "You are a helpfull ai assistant"):
     response = openai_client.chat.completions.create(
         model=model,
         messages=[
@@ -21,7 +21,7 @@ def generate_text_basic(prompt: str, model="gpt-4", system_prompt: str = "You ar
     return response.choices[0].message.content
 
 
-def generate_text_with_conversation(messages, model="gpt-4"):
+def generate_text_with_conversation(messages, model="gpt-4o"):
     response = openai_client.chat.completions.create(
         model=model,
         messages=messages
