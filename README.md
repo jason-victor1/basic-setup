@@ -66,7 +66,7 @@ This guide provides a step-by-step walkthrough to set up a Python project for bu
      # Create an instance of the OpenAI class
      openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-     def generate_text_basic(prompt: str, model="gpt-4", system_prompt: str = "You are a helpful AI assistant"):
+     def generate_text_basic(prompt: str, model="gpt-4o", system_prompt: str = "You are a helpful AI assistant"):
          response = openai_client.chat.completions.create(
              model=model,
              messages=[
@@ -76,7 +76,7 @@ This guide provides a step-by-step walkthrough to set up a Python project for bu
          )
          return response.choices[0].message.content
 
-     def generate_text_with_conversation(messages, model="gpt-4"):
+     def generate_text_with_conversation(messages, model="gpt-4o"):
          response = openai_client.chat.completions.create(
              model=model,
              messages=messages
@@ -116,7 +116,7 @@ This guide provides a step-by-step walkthrough to set up a Python project for bu
 
      prompt = "Explain the concept of AI agents in one sentence."
 
-     response = generate_text_basic(prompt, model="gpt-4")
+     response = generate_text_basic(prompt, model="gpt-4o")
 
      print(response)
      ```
